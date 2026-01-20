@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="task-container">
+        <h1>Welcome to Task Manager!!</h1>
+        <h2 id="greeting"></h2>
+
+        <div class="task-input">
+           <div class="inputName">
+             <p >Task name - </p>
+            <input id="name" type="text" placeholder="Enter your task name">
+           </div>
+           <div class="inputDue">
+            <p>Due Date - </p>
+            <input id="duedate" type="date">
+           </div>
+            <div class="inputPriority">
+                <p>Priority - </p>
+            <select id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            </div>
+            <div class="submit">
+                <button id="submitBtn" type="button">Submit</button>
+            </div>
+            
+        </div>
+
+        <div class="dashboard">
+            <div class="insight">
+                <p>Total Tasks</p>
+                <h3 id="total">0</h3>
+            </div>
+
+            <div class="insight">
+                <p>Pending</p>
+                <h3 id="pending">0</h3>
+            </div>
+
+            <div class="insight">
+                <p>Completed</p>
+                <h3 id="completed">0</h3>
+            </div>
+
+            <div class="insight">
+                <p>Due Today</p>
+                <h3 id="dueToday">0</h3>
+            </div>
+        </div>
+
+        <div class="list">
+            <p>Your tasks are........</p>
+            <div class="tasks">
+                <ul id="tasksList"></ul>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
